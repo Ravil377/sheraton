@@ -1,0 +1,15 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'Единственный пятизвездочный отель'
+    - var subtitle = 'В Республике Башкортостан'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/about-bg.png'
+    - var button = false
+
+block chess
+    include ./components/chess/chess
+

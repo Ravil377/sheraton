@@ -1,0 +1,3 @@
+@mixin transit ($tr:0.24) {
+	transition: all #{$tr}s;
+}

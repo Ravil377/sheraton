@@ -1,0 +1,30 @@
+// Font
+$font-family-base: "agenda", sans-serif;
+$enable-smooth-scroll: false;
+
+$hover: #ff009c;
+$main: #A00062;
+$black: #2E2D2D;
+/**
+ * Grid system
+ * -----------------------------------------
+ */
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+// Grid containers
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1300px
+);

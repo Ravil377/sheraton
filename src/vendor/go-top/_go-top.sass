@@ -1,0 +1,28 @@
+.go-top
+    align-items: center
+    bottom: 30px
+    cursor: pointer
+    display: none
+    font-size: 24px
+    position: fixed
+    right: 15px
+    text-decoration: none
+    transition: .2s ease
+    justify-content: center
+    height: 24px
+    width: 24px
+    border-radius: 50%
+    z-index: 20
+    //background: $purple
+    .icon
+        width: 24px
+        height: 24px
+    @include media-breakpoint-up(lg)
+        right: 30px
+
+    &.is-show
+        display: flex
+
+        &:hover
+            transition: .2s ease
+            transform: scale(1.1)

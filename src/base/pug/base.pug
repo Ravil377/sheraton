@@ -1,0 +1,44 @@
+include ../../mixins/pug/svg-icon
+include ../../mixins/pug/modal
+include ../../mixins/pug/input
+include ../../mixins/pug/select
+include ../../mixins/pug/btn
+include ../../mixins/pug/social
+//- include ../../components/slider/slider
+
+block variables
+    -
+        var baseDir = './';
+        var bg = bg;
+        var title = title;
+        var subtitle = subtitle;
+        var isButton = button;
+
+doctype html
+html(lang="ru")
+    //- Include head
+    include ./head
+
+    body(class=pageClass)
+        include ../../components/header/header
+        block news
+        block blacksection
+        block action
+        block chess
+        block bron
+            //- block contact
+  
+        //- Include footer
+        include ../../components/footer/footer
+        //- include ../../components/modal/modal
+        
+        a.go-top.go-top--js(href='#')
+            +icon('up')
+            
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js" integrity="sha512-IB7NSySDRedVEsYsOVuzN5O5jwRjV2ewVVmkDFIgE0yNu11GreBCOMv07i7hlQck41T+sTXSL05/cG+De4cZDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js")
+        
+        script(src=`${baseDir}js/main.js`)
+
+        block script

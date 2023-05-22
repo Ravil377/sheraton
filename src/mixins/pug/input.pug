@@ -1,0 +1,32 @@
+mixin input(labeltext, type, idinput)
+    -
+        var labeltext = labeltext || '';
+        var type = type || '';
+        var idinput = idinput || '';
+
+    .form__placeholder-container.form__placeholder-container--js
+        input(type=`${type}` name="" placeholder=" " required="required" id=`${idinput}` class="form__input--js")&attributes(attributes)
+        label(for=`${idinput}`)!=labeltext
+
+mixin textarea(labeltext, type, idinput)
+    -
+        var labeltext = labeltext || '';
+        var type = type || '';
+        var idinput = idinput || '';
+
+    .form__placeholder-container.form__placeholder-container--js
+        textarea(type=`${type}` name="" placeholder=" " required="required" id=`${idinput}` class="form__input--js")&attributes(attributes)
+        label(for=`${idinput}`)!=labeltext
+
+mixin checkbox(labeltext, idinput)
+    -
+        var labeltext = labeltext || '';
+        var idinput = idinput || '';
+        var links = links || '';
+
+    .form__checkbox.form__placeholder-container--js
+        input(type='checkbox' name="" required="required" id=`${idinput}` class="form__input--js")&attributes(attributes)
+        label(for=`${idinput}`)!=labeltext
+
+mixin switch()
+    input(type="checkbox" class="checkbox__switch checkbox__switch--js")&attributes(attributes)

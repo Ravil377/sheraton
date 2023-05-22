@@ -1,0 +1,6 @@
+mixin modal()
+    .modal.modal-js&attributes(attributes)
+        .modal__container.modal__container-js
+            button(data-id="closemodal").modal__close-button.js-modal-close-button
+            .modal__content
+                block

@@ -1,0 +1,162 @@
+@use "sass:math";
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-arr {
+    width: math.div(13, 25) * 1em;
+}
+.icon-arr-download {
+    width: math.div(9, 9) * 1em;
+}
+.icon-box {
+    width: math.div(80, 80) * 1em;
+}
+.icon-bridge {
+    width: math.div(38, 36) * 1em;
+}
+.icon-canister {
+    width: math.div(540, 579) * 1em;
+}
+.icon-chat {
+    width: math.div(18, 17) * 1em;
+}
+.icon-chat-icon {
+    width: math.div(72, 72) * 1em;
+}
+.icon-check-list {
+    width: math.div(58, 58) * 1em;
+}
+.icon-chemistry {
+    width: math.div(28, 27) * 1em;
+}
+.icon-dropdown {
+    width: math.div(6, 4) * 1em;
+}
+.icon-flag {
+    width: math.div(29, 29) * 1em;
+}
+.icon-hook {
+    width: math.div(28, 27) * 1em;
+}
+.icon-icon-adv1 {
+    width: math.div(59, 67) * 1em;
+}
+.icon-icon-adv2 {
+    width: math.div(62, 62) * 1em;
+}
+.icon-icon-adv3 {
+    width: math.div(60, 60) * 1em;
+}
+.icon-icon-adv4 {
+    width: math.div(68, 55) * 1em;
+}
+.icon-icon-adv5 {
+    width: math.div(69, 54) * 1em;
+}
+.icon-icon-adv6 {
+    width: math.div(59, 55) * 1em;
+}
+.icon-icon-logistica {
+    width: math.div(29, 28) * 1em;
+}
+.icon-icon-search {
+    width: math.div(29, 29) * 1em;
+}
+.icon-icon-service {
+    width: math.div(34, 34) * 1em;
+}
+.icon-icon-shield {
+    width: math.div(31, 31) * 1em;
+}
+.icon-icon1 {
+    width: math.div(27, 31) * 1em;
+}
+.icon-info_icon {
+    width: math.div(64, 64) * 1em;
+}
+.icon-inst {
+    width: math.div(33, 33) * 1em;
+}
+.icon-logo {
+    width: math.div(165, 110) * 1em;
+}
+.icon-map {
+    width: math.div(95, 81) * 1em;
+}
+.icon-more-arr {
+    width: math.div(8, 8) * 1em;
+}
+.icon-oil-mining {
+    width: math.div(30, 28) * 1em;
+}
+.icon-pdf {
+    width: math.div(40, 40) * 1em;
+}
+.icon-phone {
+    width: math.div(21, 20) * 1em;
+}
+.icon-roller {
+    width: math.div(64, 64) * 1em;
+}
+.icon-sear {
+    width: math.div(59, 59) * 1em;
+}
+.icon-search {
+    width: math.div(22, 22) * 1em;
+}
+.icon-search-icon {
+    width: math.div(25, 24) * 1em;
+}
+.icon-search_1 {
+    width: math.div(69, 69) * 1em;
+}
+.icon-setting {
+    width: math.div(80, 80) * 1em;
+}
+.icon-sh {
+    width: math.div(93, 113) * 1em;
+}
+.icon-shie {
+    width: math.div(66, 66) * 1em;
+}
+.icon-shield {
+    width: math.div(61, 60) * 1em;
+}
+.icon-sot {
+    width: math.div(200, 201) * 1em;
+}
+.icon-sota {
+    width: math.div(80, 76) * 1em;
+}
+.icon-sun {
+    width: math.div(72, 72) * 1em;
+}
+.icon-telegram {
+    width: math.div(32, 33) * 1em;
+}
+.icon-time {
+    width: math.div(54, 54) * 1em;
+}
+.icon-univ {
+    width: math.div(58, 59) * 1em;
+}
+.icon-up {
+    width: math.div(25, 24) * 1em;
+}
+.icon-viber {
+    width: math.div(33, 36) * 1em;
+}
+.icon-vk {
+    width: math.div(33, 33) * 1em;
+}
+.icon-whatsapp {
+    width: math.div(32, 33) * 1em;
+}
+.icon-youtube {
+    width: math.div(33, 33) * 1em;
+}

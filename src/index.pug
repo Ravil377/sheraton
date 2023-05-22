@@ -1,0 +1,18 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'Свадьба Вашей Мечты'
+    - var subtitle = 'Свадебный номер в подарок'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/welcome-bg.png'
+    - var button = true
+
+block news
+    include ./components/news/news
+block blacksection
+    include ./components/blacksection/blacksection
+block action
+    include ./components/action/action

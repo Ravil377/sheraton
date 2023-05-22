@@ -1,0 +1,17 @@
+.form__select-container {
+    margin-top: 6px;
+    select {
+        width: 100%;
+        border: 1px solid #D9D9D9;
+        border-radius: 5px;
+        padding: 9px 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        appearance: none;
+        overflow: hidden;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.132069 0.239964C0.216659 0.166509 0.331371 0.125244 0.450981 0.125244C0.57059 0.125244 0.685303 0.166509 0.769892 0.239964L3.00272 2.17947L5.23555 0.239964C5.32063 0.168591 5.43457 0.129097 5.55284 0.12999C5.67111 0.130883 5.78425 0.17209 5.86788 0.244737C5.95152 0.317383 5.99896 0.415657 5.99998 0.518391C6.00101 0.621125 5.95554 0.720099 5.87338 0.793997L3.32163 3.01052C3.23705 3.08398 3.12233 3.12524 3.00272 3.12524C2.88311 3.12524 2.7684 3.08398 2.68381 3.01052L0.132069 0.793997C0.0475054 0.72052 0 0.620877 0 0.516981C0 0.413084 0.0475054 0.313441 0.132069 0.239964Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center right 17px;
+    }
+}

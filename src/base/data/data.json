@@ -1,0 +1,29 @@
+{
+  "mainmenuData": [
+    {
+      "text": "Главная",
+      "link": "index.html"
+    },
+    {
+      "text": "Секции",
+      "link": "index.html#partition"
+    },
+    {
+      "text": "Программа",
+      "link": "index.html#schedule"
+    },
+    {
+      "text": "Отзывы",
+      "link": "index.html#form"
+    },
+    {
+      "text": "Меры безопасности",
+      "link": "index.html#security"
+    },
+    {
+      "text": "Галерея",
+      "link": "gallery.html"
+    }
+  ]
+}
+

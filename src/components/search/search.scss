@@ -1,0 +1,19 @@
+button[data-id="search"] {
+    border: 0;
+    outline: 0;
+    background: unset;
+    padding: 0;
+    height: fit-content;
+    svg {
+        width: 22px;
+        height: 22px;
+        fill: #FFFFFF;
+        transition: .4s;
+    }
+    &:hover {
+        svg {
+            fill: #FF001A;
+        }
+    }
+    
+}

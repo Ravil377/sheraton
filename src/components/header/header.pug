@@ -1,0 +1,35 @@
+- var bg = bg
+- var title = title 
+- var subtitle = subtitle
+- var isbutton = button
+div(style=`--bg-1:url(${bg});`).header__container
+    header.header
+        .outer
+            .inner
+                .header__content
+                    address.address  г. Уфа, ул. Цюрупы 7
+                    a(href="/").logo 
+                        img(src="./images/logo/logo.svg" alt="Логотип")
+                    a(href="tel:83472850100").phone 8 (347) 285-01-00
+                    nav.nav 
+                        a(href="#") О нас
+                        a(href="#") Бронирование
+                        a(href="#") Акции и пакеты
+                        a(href="#") Залы
+                        a(href="#") Рестораны и бары
+                        a(href="#") Бутики
+                        a(href="#") Мероприятия
+                        a(href="#") Дополнительные услуги
+                        a(href="#") Контакты 
+    .header__title
+        h1= title
+        p.text= subtitle
+        if(isbutton)
+            a(href="#").btn Подробнее
+.filter 
+    .outer
+        .inner
+            .filter__content
+                p.smalltext Гарантированное заселение
+
+
