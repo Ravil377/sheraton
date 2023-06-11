@@ -132,3 +132,19 @@ if (numberSlider) {
     }
   });
 }
+
+
+const tabs = document.querySelector('.tabs__buttons-js');
+const details = document.querySelector('.tabs__details-js');
+tabs.addEventListener('click', (e) => {
+  const tab = e.target;
+  const id = tab.id;
+  const active = tabs.querySelector('._active');
+  const detail = details.querySelector('._active');
+  if(tab.classList.contains('btn')) {
+    detail.classList.remove('_active');
+    active.classList.remove('_active');
+    tab.classList.add('_active');
+    details.querySelector(`[data-tab="${id}"]`).classList.add('_active');
+  }
+})

@@ -5,7 +5,7 @@
 .form__placeholder-container input {
     border: none;
     background: transparent;
-    border: 1px solid #B5B9BD;
+    border-bottom: 1px solid #B5B9BD;
     box-sizing: border-box;
     outline: none;
     width: 100%;
@@ -13,12 +13,12 @@
     font-size: 18px;
     line-height: 100%;
     color: #191C1F;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    min-height: 60px;
+    padding-top: 16px;
+    padding-left: 11px;
+    padding-right: 11px;
+    min-height: 61px;
     box-sizing: border-box;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
 }
 // .form__placeholder-container.form__placeholder-container_active input {
 //     border: 1px solid #FF0606;
@@ -41,16 +41,16 @@
 }
 .form__placeholder-container label {
     width: fit-content;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 21px;
     line-height: 24px;
-    color: #191C1F;
+    color: #979696;
     pointer-events: none;
     position: absolute;
     transition: all 200ms;
     top: 50%;
     transform: translateY(-50%);
-    left: 19px;
+    left: 11px;
     span {
         font-weight: 400;
         font-size: 15px;
@@ -73,7 +73,7 @@
 }
 .form__placeholder-container input:focus + label,
 .form__placeholder-container input:not(:placeholder-shown) + label {
-    top: -15px;
+    top: -6px;
     left: 0;
     // font-size: 11px;
 }

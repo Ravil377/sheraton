@@ -1,0 +1,26 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Свадьба'
+    - var subtitle = 'Звоните по телефону +7 (347) 285-01-20'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/wedding-bg.png'
+    - var numberTitle = 'Свадьба вашей мечты'
+    - var numberSubtitle = 'в Sheratonplaza Ufa Congress Hotel!'
+    - var numberText = 'Впечатляющий выбор площадок, внимание к деталям и легендарный сервис SHERATONPLAZA позволяет воплотить свадьбу вашей мечты в жизнь!'
+    - var numberTitle1 = "Оснащение номера"
+    - var numberSubtitle1 = "комфорт и дополнительные возможности экзекьютива"
+    - var slides = ['/images/wedding/1.png','/images/wedding/1.png','/images/wedding/1.png','/images/wedding/1.png','/images/wedding/1.png']
+    - var thumbs = ['/images/wedding/1.png','/images/wedding/1.png','/images/wedding/1.png','/images/wedding/1.png']
+
+block wedding
+    include ./components/wedding/number
+block blacksection
+    include ./components/blacksection1/blacksection
+block services
+    include ./components/services/chess
+block action
+    include ./components/action/action
+block form
+    include ./components/form1/form

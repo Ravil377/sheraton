@@ -1,0 +1,11 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Акции и пакеты'
+    - var subtitle = 'Специальные предложения для гостей отеля'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/action-bg.png'
+
+block actionpage 
+    include ./components/actionpage/actionpage

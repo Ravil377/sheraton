@@ -1,0 +1,13 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Утро невесты'
+    - var subtitle = 'Проведите эту особенную ночь в единственном отеле пять звезд в Республике Башкортостан'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/utro-bg.png'
+
+block tabs 
+    include ./components/tabs/tabs
+block form
+    include ./components/form1/form

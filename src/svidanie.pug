@@ -1,0 +1,14 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Романтическое свидание'
+    - var subtitle = 'Проведите это свидание в единственном отеле пять звезд в Республике Башкортостан'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/svidanie-bg.png'
+    - var noTitle = true
+
+block tabs 
+    include ./components/tabs/tabs
+block form
+    include ./components/form1/form

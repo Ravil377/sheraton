@@ -1,0 +1,12 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Мероприятия'
+    - var subtitle = 'Организация праздников и мероприятий на высшем уровне'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/meroprijatia-bg.png'
+    - var noTitle = true
+
+block meropr 
+    include ./components/meropr/meropr

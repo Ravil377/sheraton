@@ -1,0 +1,19 @@
+section.tabs
+    .outer 
+        .inner 
+            if(!noTitle)
+                .tabs__container
+                    h2 Специальное предложение для молодоженов
+                    p.smalltext Ранний заезд с 6:00 или поздний выезд до 16:00
+            .tabs__content
+                .tabs__buttons.tabs__buttons-js 
+                    button(id=1).btn._no-border._active Забронировать
+                    button(id=2).btn._no-border Сертификаты
+                    button(id=3).btn._no-border Календарь доступности
+                .tabs__details.tabs__details-js
+                    div(data-tab="1").tabs__detail._active
+                        img(src="/images/screencapture1.png")
+                    div(data-tab="2").tabs__detail
+                        img(src="/images/screencapture1.png")
+                    div(data-tab="3").tabs__detail
+                        img(src="/images/screencapture1.png")
