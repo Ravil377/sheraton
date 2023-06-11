@@ -81,3 +81,54 @@ if(imageSliders) {
     });
   })
 }
+
+
+const numberSlider = document.querySelector('.number__slider-js');
+const numberThumbSlider = document.querySelector('.number__thumb-slider-js');
+const thumbContainer = document.querySelector('.number__slider-thumb-container');
+
+if (numberSlider) {
+  var thumbSwiper = new Swiper(numberThumbSlider, {
+    lazy: true,
+    effect: "fade",
+    slidesPerView: 1,
+    allowTouchMove: false,
+    fadeEffect: {
+      crossFade: true
+    },
+    watchSlidesProgress: true,
+  });
+
+  const numberSwiper = new Swiper(numberSlider, {
+    lazy: true,
+    slidesPerView: 1,
+    effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    thumbs: {
+      swiper: thumbSwiper,
+    },
+    navigation: {
+      nextEl: ".swiper-button-prev-js",
+      prevEl: ".swiper-button-next-js",
+    },
+  });
+
+  numberSwiper.on('slideChangeTransitionEnd', function () {
+    if (numberSwiper.activeIndex === numberSwiper.slides.length - 1) {
+      thumbContainer.classList.add('hide');
+      // Выполните нужные действия для предпоследнего слайда
+    } else {
+      thumbContainer.classList.remove('hide');
+    }
+  });
+}

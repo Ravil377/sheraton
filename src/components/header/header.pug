@@ -2,6 +2,7 @@
 - var title = title 
 - var subtitle = subtitle
 - var isbutton = button
+- var textButton = textButton
 div(style=`--bg-1:url(${bg});`).header__container
     header.header
         .outer
@@ -25,7 +26,7 @@ div(style=`--bg-1:url(${bg});`).header__container
         h1= title
         p.text= subtitle
         if(isbutton)
-            a(href="#").btn Подробнее
+            a(href="#").btn!=textButton
 .filter 
     .outer
         .inner

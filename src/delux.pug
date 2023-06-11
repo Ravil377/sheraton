@@ -1,0 +1,21 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Номер Делюкс'
+    - var subtitle = 'Уют и комфорт'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/delux/exe_3.png'
+    - var button = true
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Комфорт и спокойствие'
+    - var numberSubtitle = 'Sheratonplaza Ufa Congress Hotel'
+    - var numberText = 'Комфортабельные номера Делюкс (32 м2).<br>Отдельная рабочая зона с эргономичным креслом и рабочим столом и уютная спальная зона.<br>2 номера для людей с ограниченными возможностями.'
+    - var numberTitle1 = "Оснащение номера"
+    - var numberSubtitle1 = "комфорт и дополнительные возможности Делюкса"
+    - var slides = ['/images/delux/exe_6.png','/images/delux/exe_5.png','/images/delux/exe_4.png','/images/delux/exe_3.png']
+    - var thumbs = ['/images/delux/exe_5.png','/images/delux/exe_4.png','/images/delux/exe_3.png']
+    - var ePic = "/images/delux/exe_3e.png"
+    - var items = [ 'Система кондиционирования с индивидуальной панелью управления', 'Раздельные ванна и душ типа "тропический дождь"', 'Комфортабельная рабочая зона с высокоскоростным Интернетом и бесплатным Wi-Fi','Кабельное телевидение','Сейф','Бутилированная вода, чайная станция, холодильник, мини-бар','Подставка для хранения сумок, щетка и ложка для обуви, гладильная доска, утюг','Туалетные принадлежности','Завтрак по системе "шведский стол"','Круглосуточный бесплатный доступ в фитнес-центр', 'Посещение сауны в зоне Shine SPA', 'Доступны номера для людей с ограниченными возможностями'] 
+block lux
+    include ./components/number/number
