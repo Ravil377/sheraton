@@ -1,0 +1,21 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Номер Дипломатический Люкс'
+    - var subtitle = 'Элегантный'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/diplomatic/dip_lux_1.png'
+    - var button = true
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Для работы и отдыха'
+    - var numberSubtitle = 'Sheratonplaza Ufa Congress Hotel'
+    - var numberText = 'Просторный (127 кв.м.) и элегантный номер с гардеробной, столовой, кухней, гостиной и библиотекой не оставит Вас равнодушными. Эргономичная организация пространства делает Дипломатический Люкс светлым и уютным номером, в котором комфортно работать и отдыхать.<br><br>Дополнительный бонус: в стоимость проживания входит 2 часа аренды VIP-зала русского бильярда.'
+    - var numberTitle1 = "Оснащение номера"
+    - var numberSubtitle1 = "комфорт и дополнительные возможности Димпломатического Люкса"
+    - var slides = ['/images/diplomatic/dip_lux_8.png','/images/diplomatic/dip_lux_2.png','/images/diplomatic/dip_lux_3.png','/images/diplomatic/dip_lux_4.png','/images/diplomatic/dip_lux_5.png','/images/diplomatic/dip_lux_6.png','/images/diplomatic/dip_lux_7.png']
+    - var thumbs = ['/images/diplomatic/dip_lux_2.png','/images/diplomatic/dip_lux_3.png','/images/diplomatic/dip_lux_4.png','/images/diplomatic/dip_lux_5.png','/images/diplomatic/dip_lux_6.png', '/images/diplomatic/dip_lux_7.png']
+    - var ePic = "/images/diplomatic/dip_lux_1e.png"
+    - var items = ['Две просторные комнаты','Полностью оборудованная кухня','Просторная гостиная, библиотека','Кабельное телевидение','Сейф','Кровати размера king size','Раскладывающийся двухместный диван','Капсульная кофемашина Nespresso + капсулы с кофе','Бутилированная вода','Система кондиционирования с индивидуальной панелью управления','Раздельные ванна и душ типа "тропический дождь", гостевой санузел','Комфортабельная рабочая зона с высокоскоростным Интернетом и бесплатным Wi-Fi','Подставка для хранения сумок, щетка и ложка для обуви, гладильная доска, утюг','Полная комплектация туалетных принадлежностей','Завтрак по системе "шведский стол"','Доступ в эксклюзивную Клубную гостиную','Круглосуточный бесплатный доступ в фитнес-центр'] 
+block lux
+    include ./components/number/number
