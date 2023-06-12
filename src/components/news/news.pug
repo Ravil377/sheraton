@@ -1,41 +1,42 @@
 section.section 
-    .outer 
+    div(style="overflow: hidden;").outer 
         .inner 
             .section__content
                 a(href="#").linktext ВСЕ НОВОСТИ
                 h2 Новости
                 p.smalltext Все актуальные анонсы и события из жизни отеля SHERATONPLAZA Ufa Congress Hotel
-                .section__list.grid
-                    a(href="#").card
-                        .img.shine
-                            img(src="./images/news/1.png")
-                        .content
-                            date 13 февраля
-                            p.text 17 февраля мы готовим для вас гастроужин в зале Националь, который удивит ваши вкусовые рецепторы.
-                            .link Подробнее 
-                                <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
-                                </svg>
-                    a(href="#").card
-                        .img.shine
-                            img(src="./images/news/2.png")
-                        .content
-                            date 11 февраля
-                            p.text Дорогие гости! При бронировании номеров с 27 по 31 января действует скидочный тариф на номера. Стоимость от 6200 рублей без завтрака (категория делюкс).
-                            .link Подробнее 
-                                <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
-                                </svg>
-                    a(href="#").card
-                        .img.shine
-                            img(src="./images/news/3.png")
-                        .content
-                            date 9 февраля
-                            p.text В команду ресторана NOVUM TAGANOK требуются официанты с опытом работы и знанием стандартов сервиса без возрастного ограничения (преимущественно 40+).
-                            .link Подробнее 
-                                <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
-                                </svg>
+                div(style="width: 100%;").section__slider-js.sections
+                    .section__list.swiper-wrapper
+                        a(href="#").card.swiper-slide
+                            .img.shine
+                                img(src="./images/news/1.png")
+                            .content
+                                date 13 февраля
+                                p.text 17 февраля мы готовим для вас гастроужин в зале Националь, который удивит ваши вкусовые рецепторы.
+                                .link Подробнее 
+                                    <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
+                                    </svg>
+                        a(href="#").card.swiper-slide
+                            .img.shine
+                                img(src="./images/news/2.png")
+                            .content
+                                date 11 февраля
+                                p.text Дорогие гости! При бронировании номеров с 27 по 31 января действует скидочный тариф на номера. Стоимость от 6200 рублей без завтрака (категория делюкс).
+                                .link Подробнее 
+                                    <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
+                                    </svg>
+                        a(href="#").card.swiper-slide
+                            .img.shine
+                                img(src="./images/news/3.png")
+                            .content
+                                date 9 февраля
+                                p.text В команду ресторана NOVUM TAGANOK требуются официанты с опытом работы и знанием стандартов сервиса без возрастного ограничения (преимущественно 40+).
+                                .link Подробнее 
+                                    <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
+                                    </svg>

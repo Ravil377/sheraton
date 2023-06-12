@@ -7,11 +7,21 @@ const sliderSection = document.querySelector('.section__list-js');
 
 if (sliderSection) {  
     var Slider = new Swiper(sliderSection, {
-        slidesPerView: 3,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 10,
         navigation: {
             nextEl: '.slider-sect-right-btn-js',
             prevEl: '.slider-sect-left-btn-js',
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
         },
     });
 }
@@ -21,6 +31,20 @@ if (slider) {
     slidesPerView: 5,
     spaceBetween: 50,
     centeredSlides: true,
+    breakpoints: {
+      576: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50
+      }
+    },
     navigation: {
       nextEl: '.slider-right-btn-js',
       prevEl: '.slider-left-btn-js',
@@ -61,6 +85,26 @@ if (slider) {
   });
 
 }
+
+const sectSliders = document.querySelector('.section__slider-js');
+
+if(sectSliders) {
+    var sectSwiper = new Swiper(sectSliders, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 25
+        }
+      }
+    });
+}
+
 
 const imageSliders = document.querySelectorAll('.img-slider');
 
@@ -136,7 +180,7 @@ if (numberSlider) {
 
 const tabs = document.querySelector('.tabs__buttons-js');
 const details = document.querySelector('.tabs__details-js');
-tabs.addEventListener('click', (e) => {
+tabs && tabs.addEventListener('click', (e) => {
   const tab = e.target;
   const id = tab.id;
   const active = tabs.querySelector('._active');
@@ -148,3 +192,14 @@ tabs.addEventListener('click', (e) => {
     details.querySelector(`[data-tab="${id}"]`).classList.add('_active');
   }
 })
+
+const header = document.querySelector('.header-js');
+const burger = header.querySelector('.burger-js');
+const body = document.querySelector('body');
+const openMenu = () => {
+  header.classList.toggle('open');
+  body.classList.toggle('overlay');
+
+}
+
+burger && burger.addEventListener('click', openMenu);
