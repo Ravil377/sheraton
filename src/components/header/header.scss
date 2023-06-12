@@ -850,21 +850,23 @@ body {
 }
 .bron__list {
     padding-top: 60px;
-    a.card__slider:last-child {
-        grid-column: 1/3;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 74px;
-        .content {
-            height: fit-content;
-            padding-top: unset;
-            margin: auto 0;
+    &:not(.bron_nolast) {
+        a.card__slider:last-child {
+            grid-column: 1/3;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 74px;
+            .content {
+                height: fit-content;
+                padding-top: unset;
+                margin: auto 0;
+            }
+            .img-slider {
+                max-width: 623px;
+            }
         }
-        .img-slider {
-            max-width: 623px;
-        }
-    }
+    }    
 }
 
 .number {
@@ -921,6 +923,7 @@ body {
     position: absolute;
     right: 3.1vw;
     max-width: 17.2vw;
+    width: 100%;
     height: 12.2vw;
     bottom: 0;
     display: flex;
@@ -1150,4 +1153,194 @@ body {
 }
 .services {
     padding-top: 100px;
+}
+.advantage {
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+.advantage__container {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        row-gap: 135px;
+        li {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            .content {
+                padding-left: 23px;
+                padding-right: 23px;
+                border-left: 1px solid #A00062;
+            }
+            img {
+                margin-top: auto;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+.packet {
+    padding-top: 139px;
+    padding-bottom: 148px;
+    &.bg {
+        background: #F4F0F5;
+    }
+    .packet__container  {
+        text-align: center;
+    }
+    p.text + .packet__pack {
+        padding-top: 106px;
+    }
+    .packet__pack  {        
+        & > p.text {
+            color: #A00062;
+        }
+    }
+}
+ul.packet__list {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    li {
+        &:not(:last-of-type) {
+            .image {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 32px;
+                    height: 1px;
+                    right: -24px;
+                    background: #A00062;
+                }
+            }            
+        }    
+        .image {
+            width: 100%;
+            height: 158px;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;        
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }        
+        p {
+            padding-top: 28px;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 56px;
+            color: #2E2D2D;
+            text-align: center;
+            span {
+                display: block;
+                margin-top: 20px;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 32px;
+            }
+        }
+    }
+        
+
+}
+
+
+ul.packet__price {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    & > li {
+        &.bg1 {
+            background: url(../images/bg/standart-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &.bg2 {
+            background: url(../images/bg/buisness-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &.bg3 {
+            background: url(../images/bg/vip-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &.bg4 {
+            background: url(../images/bg/standart1-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &.bg5 {
+            background: url(../images/bg/buisness1-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &.bg6 {
+            background: url(../images/bg/vip1-bg.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        padding-top: 63px;
+        padding-bottom: 72px;
+        padding-left: 32px;
+        padding-right: 32px;
+        p {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+            color: white;
+            text-align: center;
+            span {
+                display: block;
+                font-weight: 300;
+            }
+        }
+        & > ul {
+            color: #FFFFFF;
+            text-align: left;
+            li:first-child {
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 32px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            li:not(:first-child) {
+                padding-left: 30px;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 14px;
+                    left: 7px;
+                    min-width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: white;
+                }
+            }
+        }
+    }
+}
+
+.packet__form {
+    padding-top: 100px;
+    & > a {
+        margin: 0 auto;
+        margin-top: 60px;
+    }    
 }

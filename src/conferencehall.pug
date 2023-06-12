@@ -1,0 +1,17 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Конференц-залы'
+    - var subtitle = 'Звоните по телефону +7 (347) 285-01-20'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/hall-bg.png'
+    - var button = true
+    - var textButton = "Подать заявку"
+
+block bron
+    include ./components/hall/bron
+block packet 
+    include ./components/packet/packet
+block packetwhite
+    include ./components/packetwhite/packet
