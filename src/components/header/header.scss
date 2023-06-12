@@ -717,7 +717,14 @@ body {
         }
     }
 }
-
+.chess.services.chess__padd {
+    padding-bottom: 150px;
+    ul {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+}
 .chess__container {
     .chess__title {
         text-align: center;
@@ -822,6 +829,10 @@ body {
                     }
                     p.text {
                         text-align: left;
+                    }
+                    a:not(.link) {
+                        color: #2E2D2D;
+                        font-weight: 500;
                     }
                     a.link {
                         margin-top: unset;
@@ -1097,9 +1108,27 @@ body {
 
 .form {
     padding-bottom: 100px;
+    &.form_black {
+        padding-top: 100px;
+        background: url(../images/bg/form-black-bg.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        h2 {
+            color: white;
+        }
+        label {
+            color: white;
+        }
+        input {
+            color: white;
+        }
+        form + p {
+            color: white;
+        }
+    }
 }
+
 .form__container {
-    
     h2 {
         margin: 0 auto;
         max-width: 1180px;

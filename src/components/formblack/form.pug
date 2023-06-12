@@ -1,0 +1,11 @@
+section.form.form_black
+    .outer 
+        .inner 
+            .form__container 
+                h2 Забронировать столик
+                form(action="").modal__form-js
+                    +input('Как вас зовут','text','name')
+                    +input('Номер телефона','phone','phone').phone-mask--js
+                    button(type="submit").btn._no-border Отправить
+                p Нажимая на кнопку, вы даете согласие на 
+                    a(href="#") обработку персональных данных

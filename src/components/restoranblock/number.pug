@@ -12,7 +12,7 @@ section.number
                     .number__slide.swiper-slide 
                         img(src!= slide loading="lazy" alt="Фото")
             .number__slider-pagination
-                p!= title
+                p!= numberTitle
                 .swiper-pagination
         .number__slider-thumb-container
             .outer
@@ -32,7 +32,7 @@ section.number
                         .swiper-wrapper.thumn-number__wrapper
                             each thumb in thumbs
                                 .number__slide.swiper-slide 
-                                    img(src!= thumb loading="lazy" alt="Фото")                
+                                    img(src!= thumb loading="lazy" alt="Фото")
 section.chess.services.chess__padd
     .outer 
         .inner 
@@ -42,5 +42,17 @@ section.chess.services.chess__padd
                         .image.no_absolute.no_overlay 
                            img(src!= ePic alt="Фото")
                         .content.content_left 
-                            h2.h3 Оплата почасовая, стоимость за 1 час 2500 р.
-                            p.text Дополнительно Вы можете приобрести бильярдные аксессуары и сувенирную продукцию.<br><br>Забронировать зал можно в любое время по телефону: <br><a href="tel:+73472850100">+7 (347) 285-01-00</a>
+                            h2.h3 Время поесть — тогда,<br>когда хочется
+                            p.text 
+                                strong ЗАВТРАК по системе «Шведский стол»
+                            p.text 
+                                | Понедельник — пятница<br>
+                                | 6:30 - 10:30
+                            p.text 
+                                | Суббота и воскресенье<br>
+                                | 7:00 - 11:00
+                            p.text 
+                                strong ДЕЛОВЫЕ ОБЕДЫ
+                            p.text 
+                                | Понедельник — пятница<br>
+                                | 12:00—16:00

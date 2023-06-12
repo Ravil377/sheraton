@@ -1,0 +1,14 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Рестораны'
+    - var subtitle = 'В Sheratonplaza Ufa Congress Hotel'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/restorans-bg.png'
+    - var button = false
+
+block bron
+    include ./components/restorans/bron
+block form
+    include ./components/form1/form
