@@ -1,0 +1,23 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Sugar Free Bar'
+    - var subtitle = 'В Sheratonplaza Ufa Congress Hotel'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/sugarfree-bg.png'
+    - var button = true
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Питайтесь правильно и вкусно'
+    - var numberSubtitle = 'в ресторане правильного питания #SugarFreeBar'
+    - var numberText = 'Место, где каждый сможет побаловать себя вкусным десертом без вреда для фигуры и здоровья.'
+
+    - var slides = ['/images/sugarfree/su_3.png','/images/sugarfree/su_3.png']
+    - var thumbs = ['/images/sugarfree/su_3.png']
+    - var ePic = "/images/sugarfree/su_31.png"
+
+block hallblock
+    include ./components/restoranblock/number3
+
+
+

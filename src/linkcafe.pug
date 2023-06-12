@@ -1,0 +1,23 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Link Cafe 24/1'
+    - var subtitle = 'В Sheratonplaza Ufa Congress Hotel'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/linkcafe-bg.png'
+    - var button = false
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Link Cafe 24/1'
+    - var numberSubtitle = 'в Sheratonplaza Ufa Congress Hotel'
+    - var numberText = 'Изысканная кухня в Sheratonplaza Ufa Congress Hotel'
+
+    - var slides = ['/images/linkcafe/li_1.png','/images/linkcafe/li_1.png']
+    - var thumbs = ['/images/linkcafe/li_1.png']
+    - var ePic = "/images/linkcafe/li_6.png"
+
+block hallblock
+    include ./components/restoranblock/number4
+
+
+

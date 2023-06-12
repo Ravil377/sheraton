@@ -728,6 +728,9 @@ body {
 .chess__container {
     .chess__title {
         text-align: center;
+        & > p.smalltext + p.text {
+            margin-top: 40px;
+        }
     }
     .chess__title + ul {
         padding-top: 60px;
@@ -836,6 +839,14 @@ body {
                     }
                     a.link {
                         margin-top: unset;
+                    }
+                    ul {
+                        li {
+                            font-weight: 300;
+                            font-size: 21px;
+                            line-height: 32px;
+                            color: #2E2D2D;
+                        }
                     }
                 }
                 &:not(.content_left) {
@@ -1109,7 +1120,7 @@ body {
 .form {
     padding-bottom: 100px;
     &.form_black {
-        padding-top: 100px;
+        padding-top: 140px;
         background: url(../images/bg/form-black-bg.png) no-repeat;
         background-position: center;
         background-size: cover;
