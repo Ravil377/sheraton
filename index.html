@@ -15,12 +15,17 @@
   </head>
   <body class="homepage">
     <div class="header__container" style="--bg-1:url(../images/bg/welcome-bg.png);">
-      <header class="header">
+      <header class="header header-js">
         <div class="outer">
           <div class="inner">
             <div class="header__content">
-              <address class="address"> г. Уфа, ул. Цюрупы 7</address><a class="logo" href="/"> <img src="./images/logo/logo.svg" alt="Логотип"></a><a class="phone" href="tel:83472850100">8 (347) 285-01-00</a>
-              <nav class="nav"> <a href="#">О нас</a><a href="#">Бронирование</a><a href="#">Акции и пакеты</a><a href="#">Залы</a><a href="#">Рестораны и бары</a><a href="#">Бутики</a><a href="#">Мероприятия</a><a href="#">Дополнительные услуги</a><a href="#">Контакты </a></nav>
+              <address class="address"> г. Уфа, ул. Цюрупы 7</address>
+              <div class="burger burger-js"><span></span></div><a class="logo" href="/"> <img src="./images/logo/logo.svg" alt="Логотип"></a><a class="phone" href="tel:83472850100">8 (347) 285-01-00</a>
+              <div class="nav-container">
+                <nav class="nav"> <a href="#">О нас</a><a href="#">Бронирование</a><a href="#">Акции и пакеты</a><a href="#">Залы</a><a href="#">Рестораны и бары</a><a href="#">Бутики</a><a href="#">Мероприятия</a><a href="#">Дополнительные услуги</a><a href="#">Контакты</a><a class="phone" href="tel:83472850100">8 (347) 285-01-00</a>
+                  <address class="address"> г. Уфа, ул. Цюрупы 7</address>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
@@ -40,45 +45,47 @@
       </div>
     </div>
     <section class="section"> 
-      <div class="outer"> 
+      <div class="outer" style="overflow: hidden;"> 
         <div class="inner"> 
           <div class="section__content"><a class="linktext" href="#">ВСЕ НОВОСТИ</a>
             <h2>Новости</h2>
             <p class="smalltext">Все актуальные анонсы и события из жизни отеля SHERATONPLAZA Ufa Congress Hotel</p>
-            <div class="section__list grid"><a class="card" href="#">
-                <div class="img shine"><img src="./images/news/1.png"></div>
-                <div class="content">
-                  <date>13 февраля</date>
-                  <p class="text">17 февраля мы готовим для вас гастроужин в зале Националь, который удивит ваши вкусовые рецепторы.</p>
-                  <div class="link">
-                    Подробнее <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="section__slider-js sections" style="width: 100%;">
+              <div class="section__list swiper-wrapper"><a class="card swiper-slide" href="#">
+                  <div class="img shine"><img src="./images/news/1.png"></div>
+                  <div class="content">
+                    <date>13 февраля</date>
+                    <p class="text">17 февраля мы готовим для вас гастроужин в зале Националь, который удивит ваши вкусовые рецепторы.</p>
+                    <div class="link">
+                      Подробнее <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
 </svg>
-                  </div>
-                </div></a><a class="card" href="#">
-                <div class="img shine"><img src="./images/news/2.png"></div>
-                <div class="content">
-                  <date>11 февраля</date>
-                  <p class="text">Дорогие гости! При бронировании номеров с 27 по 31 января действует скидочный тариф на номера. Стоимость от 6200 рублей без завтрака (категория делюкс).</p>
-                  <div class="link">
-                    Подробнее <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </div>
+                  </div></a><a class="card swiper-slide" href="#">
+                  <div class="img shine"><img src="./images/news/2.png"></div>
+                  <div class="content">
+                    <date>11 февраля</date>
+                    <p class="text">Дорогие гости! При бронировании номеров с 27 по 31 января действует скидочный тариф на номера. Стоимость от 6200 рублей без завтрака (категория делюкс).</p>
+                    <div class="link">
+                      Подробнее <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
 </svg>
-                  </div>
-                </div></a><a class="card" href="#">
-                <div class="img shine"><img src="./images/news/3.png"></div>
-                <div class="content">
-                  <date>9 февраля</date>
-                  <p class="text">В команду ресторана NOVUM TAGANOK требуются официанты с опытом работы и знанием стандартов сервиса без возрастного ограничения (преимущественно 40+).</p>
-                  <div class="link">
-                    Подробнее <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </div>
+                  </div></a><a class="card swiper-slide" href="#">
+                  <div class="img shine"><img src="./images/news/3.png"></div>
+                  <div class="content">
+                    <date>9 февраля</date>
+                    <p class="text">В команду ресторана NOVUM TAGANOK требуются официанты с опытом работы и знанием стандартов сервиса без возрастного ограничения (преимущественно 40+).</p>
+                    <div class="link">
+                      Подробнее <svg width="50" height="6" viewBox="0 0 50 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.99992H49.9999V5.99999H0V4.99992Z" />
 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.4586 0.006096L49.9999 5.19167L49.5439 5.98669L41.0026 0.800832L41.4586 0.006096Z" />
 </svg>
-                  </div>
-                </div></a></div>
+                    </div>
+                  </div></a></div>
+            </div>
           </div>
         </div>
       </div>
@@ -87,12 +94,12 @@
       <div class="outer"> 
         <div class="inner"> 
           <div class="slider-thumb__container">
-            <div class="slider-btn slider-left-btn slider-left-btn-js"><svg width="55" height="11" viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="slider-btn slider-left-btn slider-left-btn-js"><svg viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M54.5901 5.74756L1.23006 5.74756L1.23006 4.27756L54.5901 4.27756L54.5901 5.74756Z" />
 <path d="M5.89001 0.0176097C6.12001 0.0176096 6.34001 0.12761 6.48001 0.31761C6.72001 0.64761 6.65001 1.10761 6.32001 1.33761L1.65001 4.72761C1.53002 4.81761 1.46001 4.90761 1.46001 4.99761C1.46001 5.07761 1.53002 5.17761 1.65001 5.26761L6.33002 8.68761C6.66002 8.92761 6.73002 9.38761 6.49002 9.70761C6.25002 10.0376 5.79002 10.1076 5.47002 9.86761L0.790014 6.44761C0.290014 6.07761 1.34382e-05 5.54761 1.33892e-05 4.98761C1.33402e-05 4.42761 0.290014 3.89761 0.790014 3.53761L5.46001 0.14761C5.59001 0.0576096 5.74001 0.00760945 5.89001 0.00760943L5.89001 0.0176097Z" />
 </svg>
             </div>
-            <div class="slider-btn slider-right-btn slider-right-btn-js"><svg width="55" height="11" viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="slider-btn slider-right-btn slider-right-btn-js"><svg viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M54.5901 5.74756L1.23006 5.74756L1.23006 4.27756L54.5901 4.27756L54.5901 5.74756Z" />
 <path d="M5.89001 0.0176097C6.12001 0.0176096 6.34001 0.12761 6.48001 0.31761C6.72001 0.64761 6.65001 1.10761 6.32001 1.33761L1.65001 4.72761C1.53002 4.81761 1.46001 4.90761 1.46001 4.99761C1.46001 5.07761 1.53002 5.17761 1.65001 5.26761L6.33002 8.68761C6.66002 8.92761 6.73002 9.38761 6.49002 9.70761C6.25002 10.0376 5.79002 10.1076 5.47002 9.86761L0.790014 6.44761C0.290014 6.07761 1.34382e-05 5.54761 1.33892e-05 4.98761C1.33402e-05 4.42761 0.290014 3.89761 0.790014 3.53761L5.46001 0.14761C5.59001 0.0576096 5.74001 0.00760945 5.89001 0.00760943L5.89001 0.0176097Z" />
 </svg>
@@ -297,12 +304,12 @@
             <p class="smalltext">Акции и специальные предложения для гостей и постояльцев SHERATONPLAZA Ufa Congress Hotel</p>
             <div class="section__list section__list-slider section__list-js"> 
               <div class="slider__buttons">
-                <div class="slider-btn slider-left-btn slider-sect-left-btn-js"><svg width="55" height="11" viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="slider-btn slider-left-btn slider-sect-left-btn-js"><svg viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M54.5901 5.74756L1.23006 5.74756L1.23006 4.27756L54.5901 4.27756L54.5901 5.74756Z" />
 <path d="M5.89001 0.0176097C6.12001 0.0176096 6.34001 0.12761 6.48001 0.31761C6.72001 0.64761 6.65001 1.10761 6.32001 1.33761L1.65001 4.72761C1.53002 4.81761 1.46001 4.90761 1.46001 4.99761C1.46001 5.07761 1.53002 5.17761 1.65001 5.26761L6.33002 8.68761C6.66002 8.92761 6.73002 9.38761 6.49002 9.70761C6.25002 10.0376 5.79002 10.1076 5.47002 9.86761L0.790014 6.44761C0.290014 6.07761 1.34382e-05 5.54761 1.33892e-05 4.98761C1.33402e-05 4.42761 0.290014 3.89761 0.790014 3.53761L5.46001 0.14761C5.59001 0.0576096 5.74001 0.00760945 5.89001 0.00760943L5.89001 0.0176097Z" />
 </svg>
                 </div>
-                <div class="slider-btn slider-right-btn slider-sect-right-btn-js"><svg width="55" height="11" viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="slider-btn slider-right-btn slider-sect-right-btn-js"><svg viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M54.5901 5.74756L1.23006 5.74756L1.23006 4.27756L54.5901 4.27756L54.5901 5.74756Z" />
 <path d="M5.89001 0.0176097C6.12001 0.0176096 6.34001 0.12761 6.48001 0.31761C6.72001 0.64761 6.65001 1.10761 6.32001 1.33761L1.65001 4.72761C1.53002 4.81761 1.46001 4.90761 1.46001 4.99761C1.46001 5.07761 1.53002 5.17761 1.65001 5.26761L6.33002 8.68761C6.66002 8.92761 6.73002 9.38761 6.49002 9.70761C6.25002 10.0376 5.79002 10.1076 5.47002 9.86761L0.790014 6.44761C0.290014 6.07761 1.34382e-05 5.54761 1.33892e-05 4.98761C1.33402e-05 4.42761 0.290014 3.89761 0.790014 3.53761L5.46001 0.14761C5.59001 0.0576096 5.74001 0.00760945 5.89001 0.00760943L5.89001 0.0176097Z" />
 </svg>
