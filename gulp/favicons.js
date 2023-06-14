@@ -12,7 +12,7 @@ module.exports = () => {
 				html: 'favicons.html',
 				pipeHTML: true,
 				url: 'http://localhost/',
-				path: '/images/favicons/',
+				path: './images/favicons/',
 				replace: true,
 				version: 3,
 				lang: 'ru-RU',
@@ -37,7 +37,7 @@ module.exports = () => {
 			.pipe($.plugins.favicons({
 				html: 'favicons-logo.html',
 				pipeHTML: true,
-				path: '/images/favicons/',
+				path: './images/favicons/',
 				replace: true,
 				icons: {
 					appleIcon: false,
