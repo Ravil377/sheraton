@@ -1829,8 +1829,8 @@ ul.packet__price {
     ul {
         display: grid;
         grid-template-columns: 1fr;
-        padding-top: 10px;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
         justify-items: center;
         column-gap: 20px;
         @media (min-width: 576px) {
@@ -1905,10 +1905,32 @@ ul.packet__price {
 .timeandprice__black  {
     background: url(../../images/bg/3.png) no-repeat; 
     background-size: cover;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     position: relative;
     margin-bottom: 50px;
+    p.label {
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        transform: translateX(-50%);
+        font-weight: 300;
+        font-size:  16px;
+        line-height: 25px;
+        color: #FFFFFF;
+        background: #A00062;
+        text-align: center;
+        border-radius: 64px;
+        padding: 15px 30px;
+        width: 80%;
+        @media (min-width: 768px) {
+            width: unset;
+            padding: 21px 30px;
+            top: -40px;
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
     @media (min-width: 1024px) {
         margin-bottom: 100px;
         padding-top: 150px;
