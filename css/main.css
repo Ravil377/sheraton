@@ -9093,7 +9093,7 @@ ul.packet__price > li > ul li:not(:first-child)::after {
 }
 
 .timeandprice__black {
-  background: url(../../images/bg/3.png) no-repeat;
+  background: url(../images/bg/3.png) no-repeat;
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 50px;
