@@ -23,6 +23,7 @@ html(lang="ru")
     body(class=pageClass)
         include ../../components/header/header
         block news
+        block suvenir
         block bilblock
         block hallblock
         block wedding
@@ -31,6 +32,7 @@ html(lang="ru")
         block services
         block action
         block chess
+        block chess1
         block bron
         block packet 
         block packetwhite
@@ -44,7 +46,7 @@ html(lang="ru")
   
         //- Include footer
         include ../../components/footer/footer
-        //- include ../../components/modal/modal
+        include ../../components/modal/modal
         
         a.go-top.go-top--js(href='#')
             +icon('up')

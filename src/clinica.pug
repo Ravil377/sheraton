@@ -1,0 +1,31 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Клиника Balance'
+    - var subtitle = 'Центр полного цикла красоты, оздоровления и омоложения'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/balance-bg.png'
+    - var button = false
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Филосифия совершенства'
+    - var numberSubtitle = 'и новый подход к балансу жизни'
+    - var numberText = 'Клиника “BALANCE” - для искушенных клиентов, кому важна естественная красота, приватность, презентабельность, эстетика, индивидуальность, уверенность в себе и хорошее качество жизни<br><br>В Клинике «Баланс» для женщин и мужчин представлены все виды косметологических услуг, которые позволяют устранить эстетические проблемы, избавиться от возрастных изменений и даже вылечить заболевания кожи!<br><br>Мы предлагаем традиционные и уникальные процедуры, список которых регулярно пополняется, так как мы следим за нововведениями в мире красоты и здоровья..'
+
+    - var slides = ['./images/linkcafe/li_1.png','./images/linkcafe/li_1.png']
+    - var thumbs = ['./images/linkcafe/li_1.png']
+    - var ePic = "./images/linkcafe/li_6.png"
+
+block hallblock
+    include ./components/restoranblock/number6
+
+block blacksection
+    include ./components/blacksection1/blacksection1
+
+block chess
+    include ./components/chess/chess1
+
+block chess1
+    include ./components/chess/chess2
+
+

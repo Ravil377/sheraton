@@ -1,0 +1,16 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'Гала-ужин'
+    - var pageClass = 'mini'
+    - var menuHref = '/'
+    - var bg = '../images/bg/news-bg.png'
+    - var button = false
+
+block news
+    include ./components/news/dinner
+
+block meropr 
+    include ./components/meropr/meropr

@@ -1,0 +1,14 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'Новости'
+    - var subtitle = ''
+    - var pageClass = 'mini'
+    - var menuHref = '/'
+    - var bg = '../images/bg/news-bg.png'
+    - var button = false
+
+block news
+    include ./components/news/news1

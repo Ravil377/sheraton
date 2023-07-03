@@ -203,3 +203,16 @@ const openMenu = () => {
 }
 
 burger && burger.addEventListener('click', openMenu);
+
+
+var lastScrollTop = 0;
+
+window.addEventListener('scroll', function(event) {
+  var st = window.scrollY;
+
+  if (st > 400) {
+      document.querySelector('.nav-container').classList.add('fixed');
+  } else {
+      document.querySelector('.nav-container').classList.remove('fixed');
+  }
+});
