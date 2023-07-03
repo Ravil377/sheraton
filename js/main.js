@@ -53,14 +53,17 @@ module.exports = _createClass;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form/form */ "./src/components/form/form.js");
 /* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header/header */ "./src/components/header/header.js");
+/* harmony import */ var _overlay_overlay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./overlay/overlay */ "./src/components/overlay/overlay.js");
+/* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modal/modal */ "./src/components/modal/modal.js");
+/* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modal_modal__WEBPACK_IMPORTED_MODULE_3__);
 // import simpleParallax from 'simple-parallax-js';
 // Form
 
  // Hamburger
 //import './hamburger/hamburger'
-//import './overlay/overlay'
-//import './modal/modal'
-//import './detail/detail'
+
+
+ //import './detail/detail'
 //import './about/about'
 //import './industries/industries'
 // import './header/header'
@@ -458,6 +461,119 @@ var openMenu = function openMenu() {
 };
 
 burger && burger.addEventListener('click', openMenu);
+var lastScrollTop = 0;
+window.addEventListener('scroll', function (event) {
+  var st = window.scrollY;
+
+  if (st > 400) {
+    document.querySelector('.nav-container').classList.add('fixed');
+  } else {
+    document.querySelector('.nav-container').classList.remove('fixed');
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/modal/modal.js":
+/*!***************************************!*\
+  !*** ./src/components/modal/modal.js ***!
+  \***************************************/
+/***/ (() => {
+
+var modalOpenBtns = document.querySelectorAll('[data-modal="true"]');
+var modalCloseBtns = document.querySelectorAll('.modal__close-js');
+var modal = document.querySelector('.modal-js');
+
+var closeModal = function closeModal() {
+  modal.querySelectorAll('.modal__form-js').forEach(function (form) {
+    return form.reset();
+  });
+  modal.classList.remove('modal_opened');
+  modal.querySelector('[data-id="buy"]').style.display = "none";
+  modal.querySelector('[data-id="nikax"]').style.display = "none";
+  modal.querySelector('[data-id="viezd"]').style.display = "none";
+};
+
+var checkKeyPress = function checkKeyPress(e) {
+  if (e.code === "Escape") {
+    closeModal();
+  }
+};
+
+var checkPressOverlay = function checkPressOverlay(e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+
+  console.log(e.target);
+};
+
+var openModal = function openModal(e) {
+  e.preventDefault();
+
+  if (e.target.dataset.id === 'buy') {
+    modal.querySelector('[data-id="buy"]').style.display = "grid";
+  }
+
+  if (e.target.dataset.id === 'nikax') {
+    modal.querySelector('[data-id="nikax"]').style.display = "grid";
+  }
+
+  if (e.target.dataset.id === 'viezd') {
+    modal.querySelector('[data-id="viezd"]').style.display = "grid";
+  } // e.target.dataset.id === 'buy' ? modal.querySelector('[data-id="buy"]').style.display = "block" : modal.querySelector('[data-id="callme"]').style.display = "block";
+
+
+  modal.classList.add('modal_opened');
+};
+
+modalCloseBtns.forEach(function (btn) {
+  return btn.addEventListener('click', closeModal);
+});
+document.addEventListener('keydown', function (e) {
+  return checkKeyPress(e);
+});
+modal && modal.addEventListener("click", function (e) {
+  return checkPressOverlay(e);
+});
+modalOpenBtns.forEach(function (btn) {
+  return btn.addEventListener('click', openModal);
+});
+
+/***/ }),
+
+/***/ "./src/components/overlay/overlay.js":
+/*!*******************************************!*\
+  !*** ./src/components/overlay/overlay.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "overlayAdd": () => (/* binding */ overlayAdd),
+/* harmony export */   "overlayRemove": () => (/* binding */ overlayRemove)
+/* harmony export */ });
+var body = document.body;
+function overlayAdd() {
+  var overlay = document.createElement('div');
+  overlay.setAttribute('data-backdrop', 'overlay');
+  overlay.classList.add('overlay');
+  body.classList.add('is-active');
+  setTimeout(function () {
+    return body.classList.add('is-animate');
+  }, 100);
+  body.appendChild(overlay);
+}
+function overlayRemove() {
+  var overlay = document.querySelector('.overlay');
+
+  if (overlay) {
+    overlay.remove();
+  }
+
+  body.classList.remove('is-animate', 'is-active');
+}
 
 /***/ }),
 
