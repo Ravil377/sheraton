@@ -216,3 +216,24 @@ window.addEventListener('scroll', function(event) {
       document.querySelector('.nav-container').classList.remove('fixed');
   }
 });
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map-ya', {
+          center: [54.719022933362446,55.94877328836053],
+          zoom: 16
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+
+      myPlacemark = new ymaps.Placemark([54.719022933362446,55.94877328836053], { 
+      }, {
+        iconLayout: "default#image",
+        iconImageHref: "/images/loc.png", // Ссылка на изображение 
+        iconImageSize: [66, 100], // Размер изображения 
+        iconImageOffset: [-35, -80] // Положение изображения 
+      });
+      
+      myMap.geoObjects.add(myPlacemark);
+
+});

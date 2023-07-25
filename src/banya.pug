@@ -1,0 +1,23 @@
+extends base/pug/base
+
+append variables
+    - var title = '«Баня на крыше»'
+    - var subtitle = 'Это традиции настоящей русской бани и сервис пятизвездочного уровня.'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/banya-bg.png'
+    - var button = false
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Русская баня на крыше'
+    - var numberSubtitle = 'Неиссякаемый источник здоровья и душевного равновесия'
+    - var numberText = 'Непревзойденные специалисты продемонстрируют вам искусство принятия банных процедур, современное оборудование гарантирует максимальный уровень комфорта.<br><br>Для принятия воздушных ванн, вы можете воспользоваться прекрасным балконом, панорамные окна открывают потрясающий вид на исторический центр Уфы.<br><br>Любители контрастных процедур смогут взбодриться в ледяной купели. К услугам тех, кто хочет расслабиться — SPA процедуры на территории бани и теплая купель с душистыми травами.'
+
+    - var slides = ['./images/banya/01.png','./images/banya/02.png','./images/banya/03.png','./images/banya/04.png','./images/banya/06.png','./images/banya/07.png','./images/banya/08.png','./images/banya/09.png','./images/banya/10.png','./images/banya/11.png','./images/banya/12.png']
+    - var thumbs = ['./images/banya/02.png','./images/banya/03.png','./images/banya/04.png','./images/banya/06.png','./images/banya/07.png','./images/banya/08.png','./images/banya/09.png','./images/banya/10.png','./images/banya/11.png','./images/banya/12.png']
+    - var ePic = "./images/banya/img.png"
+
+block hallblock
+    include ./components/restoranblock/number7
+
+
+
