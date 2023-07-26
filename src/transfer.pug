@@ -1,0 +1,22 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Трансфер'
+    - var subtitle = ''
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/transfer-bg.png'
+    - var button = false
+    - var textButton = "Забронировать"
+    - var numberTitle = 'До отеля с комфортом'
+    - var numberSubtitle = 'с услугами трансфера SHERATONPLAZA Ufa Congress Hotel'
+    - var numberText = 'Самым комфортным и безопасным вариантом доехать до нашего отеля - это заказать персональный трансфер отеля SHERATONPLAZA Ufa Congress Hotel.'
+
+    - var slides = ['./images/transfer/car1.png','./images/transfer/car2.png']
+    - var thumbs = ['./images/transfer/car2.png']
+
+block hallblock
+    include ./components/restoranblock/number9
+
+block form
+    include ./components/form1/form

@@ -1,0 +1,32 @@
+section.chess.services
+    .outer 
+        .inner 
+            .chess__container
+                .chess__title 
+                    h2.h2!= numberTitle
+                    p.smalltext!= numberSubtitle
+                    p.text!= numberText
+                ul 
+                    li 
+                        .image.no_absolute.no_overlay 
+                            img(src="./images/yoga/yoga.png" alt="Фото")
+                        .content.content_left 
+                            h2.h3 Быть в балансе
+                            p.text Пилатес - это тренировка с динамическими нагрузками в медленном темпе, которая помогает оздоровить суставы и укрепить мышцы, снять напряжение и боли в теле, улучшить осанку, нормализовать сон и самочувствие в целом.<br><br>Она направлена на комплексную координацию тела, ума и духа под присмотром тренера. Рекомендовано мужчинам и женщинам.                          
+                            <a class="btn _no-border" href="#" style="margin-top: 40px;">Подробнее об услугах</a>
+            .blacksection__contacts 
+                a(href="tel:88005507855").phone._black Позвонить
+                    span +7 (800) 550-78-55
+                a(href="#").whatsapp._black Написать в WhatsApp
+                    span +7 (937) 844-78-55
+                a(href="#").online._black Онлайн-запись
+                    span Записаться
+style.
+    .chess.services {
+        margin-bottom: 60px;
+    }
+    @media(min-width: 992px) {
+       .chess.services {
+            margin-bottom: 133px;
+        }     
+    }

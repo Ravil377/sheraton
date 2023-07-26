@@ -2637,8 +2637,12 @@ ul.packet__price {
     }
 }
 .map {
-    margin-top: 80px;
-    margin-bottom: 112px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    @media(min-width: 992px) {
+        margin-top: 80px;
+        margin-bottom: 112px;
+    }
 }
 .map-grid {
     display: grid;
@@ -2646,28 +2650,41 @@ ul.packet__price {
     column-gap: 23px;
     row-gap: 23px;
     @media(min-width: 992px) {
-        grid-template-columns: 460px 1fr;
+        grid-template-columns: 660px 1fr;
     }
 }
 
 .map-contacts {
-    display: flex;
-    flex-direction: column;
-    row-gap: 36px;
-    p {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    @media (min-width: 425px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    p.title {
+        color: #2E2D2D;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+    p:not(.title) {
         color: #2E2D2D;
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
-        line-height: 32.023px; 
+        line-height: 32px; 
         display: flex;
         flex-direction: column;
         padding-left: 16px;
         border-left: 1px solid #A00062;
+        margin-bottom: 25px;
+        @media(min-width: 992px) {
+            margin-bottom: 55px;
+        }
         strong {
             display: flex;
             column-gap: 30px;
-            margin-top: 16px;
+            margin-top: 11px;
         }
         a {
             color: #2E2D2D;

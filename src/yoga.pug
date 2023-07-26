@@ -1,0 +1,22 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Йога и пилатес'
+    - var subtitle = 'Для здорового тела и ума'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/yoga-bg.png'
+    - var button = false
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Филосифия совершенства'
+    - var numberSubtitle = 'и новый подход к балансу жизни'
+    - var numberText = 'Жизнь в мегаполисе задает свой ритм и важно не только все успевать, но и быть в балансе, уметь замедляться, успокаивать ум, давать внимание и физическую активность телу для стройности и тонуса. Для вас доступны индивидуальные и групповые занятия в малой группе (до 2-х человек).'
+
+    - var slides = ['./images/linkcafe/li_1.png','./images/linkcafe/li_1.png']
+    - var thumbs = ['./images/linkcafe/li_1.png']
+    - var ePic = "./images/yoga/yoga.png"
+
+block hallblock
+    include ./components/restoranblock/number10
+
+
