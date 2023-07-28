@@ -1,0 +1,83 @@
+section.chess.services
+    .outer 
+        .inner 
+            .chess__container
+                .chess__title 
+                    h2.h2!= numberTitle
+                    p.smalltext!= numberSubtitle
+                    p.text!= numberText
+                ul 
+                    li 
+                        .image.no_absolute.no_overlay 
+                            img(src="./images/gym/gym1.png" alt="Фото")
+                        .content.content_left 
+                            h2.h3 Индивидуальные и групповые занятия
+                            p.text Индивидуальные сессии с тренером помогут гостям всегда быть в&nbsp;тонусе и добиться лучших результатов.
+                            ul(style="list-style:disc; padding-left: 30px; margin-bottom: 20px;") 
+                                li Абонемент на месяц - <span style="color: #A00062;">3000 р.</span>
+                            p(style="margin: 0;").text Дополнительно оплачивается сессия с тренером:
+                            ul(style="list-style:disc; padding-left: 30px;") 
+                                li Разовая тренировка - <span style="color: #A00062;">2500 р.</span>
+                                li 5 занятий - <span style="color: #A00062;">11 500 р.</span>
+                                li 10 занятий - <span style="color: #A00062;">20 000 р.</span>
+                                li 20 занятий - <span style="color: #A00062;">38 000 р.</span>
+                    li 
+                        .image.no_absolute.no_overlay 
+                            img(src="./images/gym/gym2.png" alt="Фото")
+                        .content.content_left 
+                            h2.h3 Тренер: Прошкин Роман
+                            p.text 
+                                strong Образование: <br>
+                                | Башкирский институт физической культуры<br>
+                                | Уфимский государственный нефтяной технический университет<br>
+
+                            p(style="margin: 0;").text 
+                                strong Спортивные достижения:
+                            ul(style="list-style:disc; padding-left: 30px; margin-bottom: 20px;") 
+                                li Звание “Лучший тренер” 2016-2020 г. по версии Persona Sport Holding
+                                li Мастер спорта России
+                                li 2-кратный призер чемпионата мира по восточным единоборствам
+                                li Факелоносец универсиады 2013
+                                li Семикратный чемпион по тхэквондо
+                            p(style="margin: 0;").text 
+                                strong Специализация:
+                            ul(style="list-style:disc; padding-left: 30px; margin-bottom: 20px;") 
+                                li Коррекция фигуры и осанки 
+                                li Реабилитация травм и болей в спине и послеродовое восстановление 
+                                li Нутрициология и подбор спортивного питания 
+                                li Детский фитнес: раннее физическое развитие ребенка
+section.number
+    .outer
+        .inner 
+            //- .number__container
+            //-     h2!= numberTitle
+            //-     p.smalltext!= numberSubtitle
+            //-     p.text!= numberText
+    .number__slider-container
+        .number__slider-js.number__slider 
+            .swiper-wrapper.number__wrapper
+                each slide in slides
+                    .number__slide.swiper-slide 
+                        img(src!= slide loading="lazy" alt="Фото")
+            .number__slider-pagination
+                p!= title
+                .swiper-pagination
+        .number__slider-thumb-container
+            .outer
+                .inner 
+                    .swiper-button-next-js.number__slider-next.number__slider-btn
+                        <svg viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54.5898 6.66943L1.22984 6.66945L1.22984 5.17586L54.5898 5.17585L54.5898 6.66943Z" fill="white"/>
+                            <path d="M5.89041 0.847265C6.12041 0.847265 6.34041 0.95903 6.48041 1.15208C6.72041 1.48737 6.65041 1.95475 6.32041 2.18845L1.65041 5.63284C1.53041 5.72429 1.46041 5.81573 1.46041 5.90717C1.46041 5.98846 1.53041 6.09006 1.65041 6.18151L6.33041 9.65638C6.66041 9.90023 6.73041 10.3676 6.49041 10.6927C6.25041 11.028 5.79041 11.0992 5.47041 10.8553L0.790411 7.38044C0.29041 7.0045 0.000409374 6.466 0.000409225 5.89701C0.000409077 5.32803 0.29041 4.78952 0.79041 4.42375L5.46041 0.979351C5.59041 0.887907 5.74041 0.837104 5.89041 0.837104L5.89041 0.847265Z" fill="white"/>
+                        </svg>
+                    .swiper-button-prev-js.number__slider-prev.number__slider-btn
+                        <svg viewBox="0 0 55 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54.5898 6.66943L1.22984 6.66945L1.22984 5.17586L54.5898 5.17585L54.5898 6.66943Z" fill="white"/>
+                            <path d="M5.89041 0.847265C6.12041 0.847265 6.34041 0.95903 6.48041 1.15208C6.72041 1.48737 6.65041 1.95475 6.32041 2.18845L1.65041 5.63284C1.53041 5.72429 1.46041 5.81573 1.46041 5.90717C1.46041 5.98846 1.53041 6.09006 1.65041 6.18151L6.33041 9.65638C6.66041 9.90023 6.73041 10.3676 6.49041 10.6927C6.25041 11.028 5.79041 11.0992 5.47041 10.8553L0.790411 7.38044C0.29041 7.0045 0.000409374 6.466 0.000409225 5.89701C0.000409077 5.32803 0.29041 4.78952 0.79041 4.42375L5.46041 0.979351C5.59041 0.887907 5.74041 0.837104 5.89041 0.837104L5.89041 0.847265Z" fill="white"/>
+                        </svg>
+                    .number__thumb-slider.number__thumb-slider-js 
+                        .number__thumb-label Следующее фото
+                        .swiper-wrapper.thumn-number__wrapper
+                            each thumb in thumbs
+                                .number__slide.swiper-slide 
+                                    img(src!= thumb loading="lazy" alt="Фото")

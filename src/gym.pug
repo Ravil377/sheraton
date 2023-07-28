@@ -1,0 +1,22 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Тренажерный зал'
+    - var subtitle = 'Командировка не повод прерывать тренировки'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+    - var bg = '../images/bg/gym-bg.png'
+    - var button = false
+    - var textButton = "Забронировать"
+    - var numberTitle = 'Снимите стресс воспользовавшись нашим фитнес-залом'
+    - var numberSubtitle = 'Одним из главных элементов Wellness-центра является тренажерный зал, расположенный на территории SPA Shine.'
+    - var numberText = ''
+
+    - var slides = ['./images/gym/photo1.png','./images/gym/photo2.png','./images/gym/photo3.png']
+    - var thumbs = ['./images/gym/photo2.png','./images/gym/photo3.png']
+
+block hallblock
+    include ./components/restoranblock/number11
+
+block form
+    include ./components/form1/form
